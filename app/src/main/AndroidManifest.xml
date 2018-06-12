@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.vcarmen.reproductor">
+    //Creamos permisos para acceder a la memoria externa
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_gmusic_lista"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        >
+
+    <activity android:name=".MainActivity"
+        android:icon="@drawable/logo_gmusic_lista"
+        android:label="G-Music"
+        android:launchMode="singleTop"
+        android:screenOrientation="portrait">
+
+
+    </activity>
+
+
+    <activity android:name=".PrincipalActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+
+        </intent-filter>
+
+    </activity>
+
+        <activity
+            android:name=".Reproductor"
+            android:label="@string/title_activity_reproductor"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
